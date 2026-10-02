@@ -1,0 +1,286 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Syiem! ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #feada6 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      max-width: 550px;
+      width: 100%;
+      border-radius: 25px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(224, 64, 129, 0.25);
+      position: relative;
+      z-index: 10;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Floating Heart FX */
+    .heart {
+      position: fixed;
+      font-size: 20px;
+      color: #ff4081;
+      user-select: none;
+      pointer-events: none;
+      animation: floatUp 4s linear infinite;
+      z-index: 2;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff4081;
+      margin-bottom: 15px;
+      box-shadow: 0 10px 20px rgba(255, 64, 129, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      color: #d81b60;
+      font-size: 2.8rem;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #777;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    /* Countdown Timer Box */
+    .countdown-container {
+      background: #fff0f5;
+      border: 2px dashed #ff4081;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+
+    .countdown-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d81b60;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .time-box {
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      min-width: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ff4081;
+    }
+
+    .time-box label {
+      font-size: 0.7rem;
+      color: #888;
+    }
+
+    .message-box {
+      background: #ffffff;
+      border-left: 4px solid #ff4081;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      text-align: left;
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: #444;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    .sign-off {
+      text-align: right;
+      font-weight: 600;
+      color: #d81b60;
+      margin-top: 15px;
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #ff4081, #ff79b0);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(255, 64, 129, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 64, 129, 0.6);
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="card">
+    <!-- Birthday Person Photo -->
+    <img class="profile-pic" src="photo.jpg" alt="Ibahunlang Marbañiang" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop'">
+
+    <h1>Happy Birthday Syiem! ❤️</h1>
+    <p class="subtitle">Ibahunlang Marbañiang • 08/10/2008</p>
+
+    <!-- Countdown Section -->
+    <div class="countdown-container">
+      <div class="countdown-title" id="countdown-status">Countdown to Birthday 🎉</div>
+      <div class="timer">
+        <div class="time-box"><span id="days">00</span><label>Days</label></div>
+        <div class="time-box"><span id="hours">00</span><label>Hours</label></div>
+        <div class="time-box"><span id="minutes">00</span><label>Mins</label></div>
+        <div class="time-box"><span id="seconds">00</span><label>Secs</label></div>
+      </div>
+    </div>
+
+    <!-- Birthday Wish Paragraph -->
+    <div class="message-box">
+      <p>Another year to you love, have a wonderful day on your special day. The day you came to this world is such an amazing blessing for your family and me. On this day the 08/10/2008 it's not just your birthday but a special day for you and me. You because you came into this world to changed so many people lives. Me because your presence made my life more beautiful and happier.</p>
+      <br>
+      <p>Have a wonderful day today filled with more blessings and having a good boyfriend that loves you from the bottom of his heart ❤️. May God bless you on this day and many more blessings to come. Once again happy birthday and have a wonderful day have lots of fun and put a smile. 🎀💝</p>
+      <div class="sign-off">by teddy bear 🐻</div>
+    </div>
+
+    <button class="btn" onclick="celebrate()">🎉 Celebrate Love!</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // Countdown Timer Logic (October 8th)
+    function updateCountdown() {
+      const now = new Date();
+      let bdayYear = now.getFullYear();
+      let bdayDate = new Date(bdayYear, 9, 8); // October is month index 9 (0-indexed)
+
+      if (now > bdayDate && (now.getDate() !== 8 || now.getMonth() !== 9)) {
+        bdayDate = new Date(bdayYear + 1, 9, 8);
+      }
+
+      const diff = bdayDate - now;
+
+      if (now.getDate() === 8 && now.getMonth() === 9) {
+        document.getElementById('countdown-status').innerText = "🎂 IT'S HER BIRTHDAY TODAY! 🎉";
+        document.getElementById('days').innerText = "00";
+        document.getElementById('hours').innerText = "00";
+        document.getElementById('minutes').innerText = "00";
+        document.getElementById('seconds').innerText = "00";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+      document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+      document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+      document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Floating Hearts Generation
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }
+    setInterval(createHeart, 500);
+
+    // Confetti Effect
+    function celebrate() {
+      confetti({
+        particleCount: 120,
+        spread: 80,
+        origin: { y: 0.6 }
+      });
+    }
+
+    window.onload = celebrate;
+  </script>
+</body>
+</html>
+</pre>
+        </body>
+    </html>
